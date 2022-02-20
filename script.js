@@ -22,6 +22,7 @@ window.addEventListener("click", function (event) {
 });
 
 function myloader() {
+  window.scrollTo(0, 0);
   setTimeout(function () {
     preloader.style.display = "none";
   }, 5000);
