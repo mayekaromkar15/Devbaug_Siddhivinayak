@@ -13,6 +13,9 @@
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
       <link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body onload="myloader()">
 <div class="pre-loader" id="pre-loader">
@@ -66,7 +69,7 @@
         </div>
   
         <div class="head-bottom flex">
-          <h2 class="animate__animated animate__fadeInUpBig" style="animation-duration: 2s; animation-delay: 4s;">SOME OTHER DUMMY TEXT</h2>
+          <h2 class="animate__animated animate__fadeInUpBig" style="animation-duration: 2s; animation-delay: 4s; font-family: 'Bebas Neue';">SOME OTHER DUMMY TEXT</h2>
           <p class="animate__animated animate__rollIn" style="animation-delay: 2s;animation-delay: 4s;">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, odit!
           </p>
@@ -126,77 +129,74 @@
     <!-- end of fullscreen modal -->
 
      <!-- body content  -->
-     <section class = "services sec-width" id = "services" >
+    <section class = "services sec-width" id = "services" >
       <div class = "title" data-aos="zoom-out-up">
-          <h1>services</h1>
+          <h1>Amenities</h1>
       </div>
       <div class = "services-container" data-aos="slide-right">
           <!-- single service -->
-          <article class = "service">
+          <article class = "service" data-aos="slide-up">
               <div class = "service-icon">
-                  <span>
-                      <i class = "fas fa-utensils"></i>
-                  </span>
+                 <div class="service-icon-img">
+                  <img src="./images/parking3.png" alt="Parking">
+                 </div>
               </div>
-              <div class = "service-content">
-                  <h2>Beach Cycling</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
-                  <!-- <button type = "button" class = "btn">Know More</button> -->
+              <div class = "service-content" style="background-color: yellowgreen;">
+                <div class="service-content-btn">
+                  <button type = "button" class = "btn">Free parking</button>
+                </div>
+                  <!-- <h2>Free parking</h2> -->
               </div>
           </article>
           <!-- end of single service -->
           <!-- single service -->
           <article class = "service" data-aos="slide-up">
               <div class = "service-icon">
-                  <span>
+                  <!-- <span>
                       <i class = "fas fa-swimming-pool"></i>
-                  </span>
+                  </span> -->
+                  <div class="service-icon-img">
+                    <img src="./images/pickNDrop2.png" alt="pickNDrop">
+                  </div>
               </div>
               <div class = "service-content">
-                  <h2>Restaurant</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
-                  <!-- <button type = "button" class = "btn">Know More</button> -->
+                <div class="service-content-btn">
+                
+                  <!-- <h2>Car pick-up drop service (paid)</h2> -->
+                  <button type = "button" class = "btn">Pick n Drop service</button>
+               </div>
               </div>
           </article>
           <!-- end of single service -->
           <!-- single service -->
           <article class = "service" data-aos="slide-up">
               <div class = "service-icon">
-                  <span>
+                  <!-- <span>
                       <i class = "fas fa-broom"></i>
-                  </span>
+                  </span> -->
+                  <div class="service-icon-img">
+                  <img src="./images/freeWifi3.png" alt="free wifi">
+                  </div>
               </div>
               <div class = "service-content">
-                  <h2>Housekeeping</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
-                  <!-- <button type = "button" class = "btn">Know More</button> -->
+                  <!-- <h2>Free Wifi</h2> -->
+                <div class="service-content-btn">
+
+                  <button type = "button" class = "btn">Free Wifi</button>
               </div>
-          </article>
-          <!-- end of single service -->
-          <!-- single service -->
-          <article class = "service" data-aos="slide-left">
-              <div class = "service-icon">
-                  <span>
-                      <i class = "fas fa-door-closed"></i>
-                  </span>
-              </div>
-              <div class = "service-content">
-                  <h2>Sea View</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
-                  <!-- <button type = "button" class = "btn">Know More</button> -->
               </div>
           </article>
           <!-- end of single service -->
       </div>
-  </section>
+    </section>
 
 
 <!-- Start Image Expander -->
-<section class = "facilities sec-width" id = "facilities" data-aos="slide-up">
-    <div class = "title" data-aos="zoom-in">
+<section class = "facilities" id = "facilities" data-aos="slide-up">
+    <div class = "title sec-width" data-aos="zoom-in">
         <h1>Facilities</h1>
     </div>
-    <div class="facilities-container">
+    <div class="facilities-container sec-width-facilites">
     
         <div class="imagezoomer">
           <div class="box" data-aos="slide-up">
@@ -223,7 +223,7 @@
 
 
 <!-- Start Image Rotator -->
-<section class = "image_rotators" id = "image_rotators">
+<!-- <section class = "image_rotators" id = "image_rotators">
     <div class = "title sec-width" data-aos="zoom-in">
         <h1>Dummy__Title</h1>
     </div>
@@ -258,7 +258,7 @@
           </div>
         </div>
       </div>
-</section>
+</section> -->
 
 <!-- end Image Rotator-->
 
@@ -421,7 +421,7 @@
       <div class = "footer-container">
           <div>
               <h2>About Us </h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, incidunt.</p>
+              <p>Explore, Journey, Discover, Adventure</p>
               <br>
               <p>Made with 💟 by Omkar</p>
               <ul class = "social-icons">
@@ -440,7 +440,7 @@
           <div>
               <h2>Useful Links</h2>
               <a href = "https://goo.gl/maps/dZY9NbFzbnxo2F4x5" target="_blank">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1294889526725!2d73.49154971471526!3d16.00677338891959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc00386a5e6cad7%3A0x906f61e5a7d534ef!2sSiddhivinayak%20Beach%20Resort!5e0!3m2!1sen!2sin!4v1644763002734!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>Map</a>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1294889526725!2d73.49154971471526!3d16.00677338891959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc00386a5e6cad7%3A0x906f61e5a7d534ef!2sSiddhivinayak%20Beach%20Resort!5e0!3m2!1sen!2sin!4v1644763002734!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>Map</a>
           </div>
 
           <div>
