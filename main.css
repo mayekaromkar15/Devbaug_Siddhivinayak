@@ -99,7 +99,7 @@ img {
 }
 .header3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("images/Singlebed3.jpeg") center/cover no-repeat;
+    url("images/Singlebed3-copy.jpg") center/cover no-repeat;
   min-height: 100vh;
   color: #fff;
   padding: 25px;
@@ -158,19 +158,17 @@ img {
     font-size: 17px;
   }
   .head-bottom h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .head-bottom {
-    font-size: 10px;
-    margin: 5px auto 50px auto;
+    margin: 5px auto 150px auto;
   }
   .head-bottom p {
-    font-size: 10px;
-    margin: 5px auto 50px auto;
+    font-size: 12px;
   }
   .carousel-cell {
     width: 100%; /* 5ull width */
-    height: 90vw;
+    height: 100vw;
   }
 }
 /* End Carousal */
@@ -729,7 +727,7 @@ img {
   opacity: 0.8;
 }
 .rate span {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 900;
   color: var(--yellow);
 }
@@ -750,6 +748,9 @@ img {
   .room {
     flex: 0 0 calc(33% - 20px);
     margin: 10px;
+  }
+  .room1 {
+    flex: 1;
   }
 }
 @media (min-width: 1370px) {
