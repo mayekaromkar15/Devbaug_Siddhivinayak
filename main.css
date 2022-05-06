@@ -446,7 +446,7 @@ img {
   font-size: 30px;
   color: var(--yellow);
   border-bottom: 5px solid var(--dark);
-  width: 235px;
+  width: 50px;
   margin: 15px 0;
 }
 
@@ -745,13 +745,18 @@ img {
     display: flex;
     /* flex-wrap: wrap; */
   }
-  .room {
-    flex: 0 0 calc(33% - 20px);
-    margin: 10px;
+
+  .sec-width-rooms {
+    width: 95vw;
+    margin: 0 auto !important;
   }
-  .room1 {
-    flex: 1;
-  }
+}
+.room {
+  flex: 0 0 calc(33% - 20px);
+  margin: 10px;
+}
+.room1 {
+  flex: 1;
 }
 @media (min-width: 1370px) {
   .rooms-container {

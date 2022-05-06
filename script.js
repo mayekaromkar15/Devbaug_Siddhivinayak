@@ -1,10 +1,20 @@
 var preloader = document.getElementById("pre-loader");
-const navBtn = document.getElementById("nav-btn");
+const navBtn1 = document.getElementById("nav-btn1");
+const navBtn2 = document.getElementById("nav-btn2");
+const navBtn3 = document.getElementById("nav-btn3");
 const cancelBtn = document.getElementById("cancel-btn");
 const sideNav = document.getElementById("sidenav");
 const modal = document.getElementById("modal");
 
-navBtn.addEventListener("click", function () {
+navBtn1.addEventListener("click", function () {
+  sideNav.classList.add("show");
+  modal.classList.add("showModal");
+});
+navBtn2.addEventListener("click", function () {
+  sideNav.classList.add("show");
+  modal.classList.add("showModal");
+});
+navBtn3.addEventListener("click", function () {
   sideNav.classList.add("show");
   modal.classList.add("showModal");
 });
