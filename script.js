@@ -35,5 +35,5 @@ function myloader() {
   window.scrollTo(0, 0);
   setTimeout(function () {
     preloader.style.display = "none";
-  }, 2000);
+  }, 1000);
 }

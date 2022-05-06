@@ -56,6 +56,9 @@ img {
   body {
     font-size: 14px;
   }
+  h1{
+    font-size: 30px;
+  }
 }
 
 /* Start Carousal */
@@ -78,8 +81,12 @@ img {
 
 /* header */
 .header1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-    url("images/Singlebed.jpeg") center/cover no-repeat;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  background-image: url("images/Singlebed.jpeg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position:center;
   min-height: 100vh;
   color: #fff;
   padding: 25px;
@@ -157,18 +164,42 @@ img {
   .head-btn {
     font-size: 17px;
   }
-  .head-bottom h2 {
-    font-size: 15px;
-  }
   .head-bottom {
-    margin: 5px auto 150px auto;
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0px auto 250px auto;
+  }
+  .head-bottom h2 {
+    padding:0;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
   }
   .head-bottom p {
+    opacity: 0.7;
     font-size: 12px;
+    margin: 5px auto;
+    width: 60vw;
   }
   .carousel-cell {
     width: 100%; /* 5ull width */
     height: 100vw;
+  }
+  .header1 {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    background-image: url("images/Singlebed-mobile.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+    min-height: 100vh;
+    width: 400;
+    height: 400;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
   }
 }
 /* End Carousal */
@@ -540,7 +571,7 @@ img {
 .imagezoomer {
   margin: 10px auto 50px auto;
   display: flex;
-  max-width: 100%;
+  max-width: 100%; 
   height: 100%;
 }
 
@@ -548,13 +579,14 @@ img {
   background-color: rgb(202, 115, 43);
   height: 450px;
   flex: 1;
-  transition: 1.5s;
+  transition:  all 2s ease-in-out;
   position: relative;
   border: #286b47;
 }
 
 .box:hover {
   flex: 2;
+  transition:  all 2s ease-in-out;
   display: block;
 }
 
@@ -571,7 +603,7 @@ img {
   left: 0;
   width: 100%;
   padding: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   text-align: center;
   align-items: center;
   background-color: #286b47;
@@ -579,7 +611,7 @@ img {
   font-weight: 600;
   color: var(--yellow);
   height: 100%;
-  transition: all 1.5s ease-in-out;
+  transition: all 2s ease-in-out;
   text-transform: uppercase;
 }
 
@@ -597,6 +629,7 @@ img {
   font-weight: 600;
   color: white;
   text-transform: uppercase;
+  transition: all 2s ease-in-out;
 }
 @media (max-width: 900px) {
   .facilities-container {
